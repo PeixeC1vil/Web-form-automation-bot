@@ -1,6 +1,6 @@
 # Atuomação de preenchimento de formulário baseado em planilha com openpyxl e selenium
 # Autor: Peixe_C1vil
-# 15/06/2024
+# 15/06/2026
 
 from selenium import webdriver
 import openpyxl
@@ -11,7 +11,7 @@ vendas_sheet = workbook['Pedidos']
 
 # Abrindo navegador e entrando no formulário
 driver = webdriver.Chrome()
-driver.get("https://vendassys-y96ccsmu.manus.space")
+driver.get("https://yoursite.com/formulario")
 
 for linhas in vendas_sheet.iter_rows(min_row=2):
 
